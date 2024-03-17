@@ -2,7 +2,7 @@
 /__pycache__
 /alembic
 /docker
-/vscode
+/.vscode
 /alembic.ini
 /rpc_client.py
 /server.py
@@ -15,4 +15,3 @@
 /sql_app/orders_publisher.py
 /sql_app/db_order_processor.py
 /sql_app/user.py
-/.vscode
