@@ -1,1 +1,0 @@
-print('chery-pick-example')
