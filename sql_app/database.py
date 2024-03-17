@@ -1,12 +1,11 @@
 from sqlalchemy import create_engine
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import sessionmaker, declarative_base
 
 
-SQLALHEMY_DB_URL = 'postgresql+psycopg2://postres:true7#90@localhost/postgres'
+SQLALHEMY_DB_URL = "postgresql+psycopg2://postgres:post@localhost/sprint"
 
 engine = create_engine(SQLALHEMY_DB_URL)
 
-SessionLocal = sessionmaker(autocommit=False, autoflash=False, bind=engine)
+SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 Base = declarative_base()
